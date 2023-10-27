@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+	.navbar {
+		background-color: $mainBlue;
+
+		&__burger-btn {
+			display: block;
+			padding: 1em;
+			z-index: 50;
+			cursor: pointer;
+		}
+
+		&__list {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 50px;
+			position: absolute;
+			top: 80px;
+			right: 0;
+			width: 100%;
+			height: calc(100vh - 80px);
+			background-color: $mainBlue;
+			transition: transform 0.5s;
+			transform: translateX(100%);
+		}
+
+		&__item {
+			padding: 1em 2em;
+			font-size: 1.2rem;
+		}
+
+		&__logo {
+			visibility: visible;
+		}
+	}
+
+	.aboutus,
+	.services {
+		&__img {
+			position: relative;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.header {
+		background-image: url("/dist/img/header-big.jpg");
+	}
+}
