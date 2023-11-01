@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
 	.navbar {
-		background-color: $mainBlue;
+		background-color: $lightOrange;
 
 		&__burger-btn {
 			display: block;
@@ -19,7 +19,7 @@
 			right: 0;
 			width: 100%;
 			height: calc(100vh - 80px);
-			background-color: $mainBlue;
+			background-color: $lightOrange;
 			transition: transform 0.5s;
 			transform: translateX(100%);
 		}
@@ -36,7 +36,8 @@
 
 	.aboutus,
 	.services {
-		&__img {
+		&__img,
+		&__second-img {
 			position: relative;
 			top: 50%;
 			left: 50%;
