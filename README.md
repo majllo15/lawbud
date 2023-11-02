@@ -1,3 +1,3 @@
 # lawbud
 
-law-bud.pl
+https://law-bud.pl
