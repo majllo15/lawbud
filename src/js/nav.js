@@ -6,10 +6,10 @@ const logo = document.querySelector(".navbar__logo")
 
 const addShadow = () => {
 	if (window.innerWidth > 576 && window.scrollY >= 200) {
-		nav.classList.add("shadow-bg")
+		nav.classList.add("nav-bg")
 		logo.classList.add("visible")
 	} else {
-		nav.classList.remove("shadow-bg")
+		nav.classList.remove("nav-bg")
 		logo.classList.remove("visible")
 	}
 }

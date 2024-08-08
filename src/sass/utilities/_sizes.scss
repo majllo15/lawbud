@@ -1,6 +1,7 @@
 @media (max-width: 768px) {
 	.navbar {
-		background-color: $lightOrange;
+		background-color: $darkBlue;
+		border-bottom: 1px solid $black;
 
 		&__burger-btn {
 			display: block;
@@ -15,11 +16,11 @@
 			align-items: center;
 			gap: 50px;
 			position: absolute;
-			top: 80px;
+			top: 78px;
 			right: 0;
 			width: 100%;
-			height: calc(100vh - 80px);
-			background-color: $lightOrange;
+			height: calc(100vh - 78px);
+			background-color: $darkBlue;
 			transition: transform 0.5s;
 			transform: translateX(100%);
 		}

@@ -16,6 +16,7 @@ body {
 html {
 	font-family: $main-font;
 	font-size: 62.5%;
+	color: $black;
 	scroll-behavior: smooth;
 	scroll-padding-top: 80px;
 }
@@ -61,8 +62,9 @@ table {
 	display: block;
 }
 
-.shadow-bg {
-	background-color: $lightOrange;
+.nav-bg {
+	background-color: $darkBlue;
+	border-bottom: 1px solid $black;
 	animation: fadeIn 0.3s ease-out;
 }
 
@@ -116,7 +118,7 @@ table {
 		visibility: hidden;
 
 		&:hover {
-			color: $mainBlue;
+			color: $lightOrange;
 		}
 	}
 
@@ -136,7 +138,7 @@ table {
 		transition: color 0.3s;
 
 		&:hover {
-			color: $mainBlue;
+			color: $lightOrange;
 		}
 	}
 }
@@ -159,7 +161,7 @@ table {
 	}
 
 	&__title {
-		font-size: 12rem;
+		font-size: 11rem;
 		color: $lightOrange;
 	}
 
@@ -193,7 +195,7 @@ table {
 	&__chevron-down {
 		position: absolute;
 		left: 50%;
-		bottom: 8px;
+		bottom: 2px;
 		transform: translateX(-50%);
 	}
 }
@@ -209,7 +211,7 @@ table {
 }
 
 .aboutus {
-	background-color: $bgPrimary;
+	background-color: #fdfdfd;
 
 	&__img {
 		filter: drop-shadow(0 0 5px #000);
@@ -217,7 +219,6 @@ table {
 
 	&__text {
 		font-size: 1.8rem;
-		color: #fff;
 
 		&--bold {
 			font-family: $bold-font;
@@ -227,11 +228,10 @@ table {
 }
 
 .services {
-	background-color: $bgSecondary;
+	background-color: $grey;
 
 	&__text {
 		font-size: 1.75rem;
-		color: #fff;
 
 		&--bold {
 			font-family: $bold-font;
@@ -250,7 +250,7 @@ table {
 }
 
 .faq {
-	background-color: $bgPrimary;
+	background: $blue;
 }
 
 .accordion {
@@ -274,7 +274,7 @@ table {
 		font-family: $bold-font;
 		text-align: left;
 		color: $grey;
-		background-color: #272727;
+		background-color: $darkBlue;
 		border-radius: 8px;
 	}
 
@@ -283,33 +283,32 @@ table {
 
 		&__text {
 			padding: 1em 2em;
-			color: $grey;
+			color: #fff;
 		}
 	}
 }
 
 .contact {
-	background-color: $bgSecondary;
+	background-color: #fdfdfd;
 
 	&__icons-group {
 		text-align: center;
 	}
 
 	&__text {
+		margin-top: 1em;
 		font-family: $bold-font;
 		font-size: 1.4rem;
 		text-transform: uppercase;
-		color: #fff;
 	}
 }
 
 .footer {
-	background-color: $bgPrimary;
+	background-color: $grey;
 
 	&__text {
 		font-size: 2rem;
 		text-align: center;
-		color: #fff;
 	}
 }
 
